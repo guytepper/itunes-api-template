@@ -1,0 +1,13 @@
+{
+  "name": "itunes-api-template",
+  "version": "1.0.0",
+  "description": "Use mustache templates to create content from the iTunes/App Store API.",
+  "main": "index.js",
+  "author": "Guy Tepper <",
+  "license": "ISC",
+  "dependencies": {
+    "minimist": "^1.2.0",
+    "mustache": "^2.3.0",
+    "request": "^2.78.0"
+  }
+}
