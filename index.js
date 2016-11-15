@@ -8,7 +8,8 @@ const opts = argv;
 // Query the itunes API
 searchItunes(opts, (err, data) => {
   if (err) throw err;
-  const result = data.results[0];
+  // When quering the API with ID, we get a singular result object instead of a results array
+  const result = data.results ? data.results[0] : data;
 
   // Use first result to render template
   const template = fs.readFile('test.mustache', (err, data) => {
